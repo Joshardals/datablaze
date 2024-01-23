@@ -3,7 +3,20 @@
 @tailwind utilities;
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .element {
+    background-color: #3498db;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.5s cubic-bezier(0.99, -0.40, 0.20, 1.55),
+      height 0.5s cubic-bezier(0.68, -0.60, 0.27, 1.55),
+      background-color 0.5s ease-in-out;
+  }
+  .element:hover {
+    width: 150px;
+    height: 150px;
+    background-color: #e74c3c;
   }
 }
