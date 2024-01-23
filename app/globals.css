@@ -3,36 +3,10 @@
 @tailwind utilities;
 
 @layer utilities {
-  /* .element {
-    background-color: #3498db;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: scale(1);
-    transition: width 0.5s cubic-bezier(0.99, -0.4, 0.2, 1.55),
-      height 0.5s cubic-bezier(0.68, 1.55, 0.27, -1),
-      background-color 0.5s ease-in-out,
-      transform 0.5s cubic-bezier(0.5, 0.1, 0.4, 1.99);
-  }
-  .element:hover {
-    width: 150px;
-    height: 150px;
-    background-color: #e74c3c;
-    transform: scale(1.2);
-  } */
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
   .element {
-    animation: fadeIn 2s;
+    animation: bounce;
+    animation-timing-function: cubic-bezier(0.5, -0.99, 0.1, 1.55);
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
   }
 }
