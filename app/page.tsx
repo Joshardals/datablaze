@@ -1,9 +1,9 @@
 export default function Home() {
   return (
-    <main className="flex flex-wrap-reverse *:bg-blue-500">
-      <div className="flex-1">1</div>
-      <div className="flex-1">2</div>
-      <div>3</div>
+    <main className="flex">
+      <div className="bg-yellow-900">1</div>
+      <div className=" flex-initial w-64 bg-red-500">2</div>
+      <div className=" bg-yellow-500">3</div>
     </main>
   );
 }
