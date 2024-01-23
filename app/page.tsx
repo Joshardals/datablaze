@@ -1,9 +1,11 @@
 export default function Home() {
   return (
-    <main className="flex justify-between">
-      <div className="order-first hover:order-last">1</div>
-      <div>2</div>
-      <div>3</div>
-    </main>
+    <div className="bg-red-500 h-56 grid grid-cols-3 gap-4 content-end">
+      <div>01</div>
+      <div>02</div>
+      <div>03</div>
+      <div>04</div>
+      <div>05</div>
+    </div>
   );
 }
