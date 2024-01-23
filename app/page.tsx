@@ -4,6 +4,7 @@ export default function Home() {
       <div className="element">
         <p>Hello World!</p>
       </div>
+      <button className="bg-red-500 px-4 py-1">Click Me!</button>
     </main>
   );
 }

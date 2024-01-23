@@ -4,9 +4,8 @@
 
 @layer utilities {
   .element {
-    animation: bounce;
+    animation: bounceIn;
     animation-timing-function: cubic-bezier(0.5, -0.99, 0.1, 1.55);
     animation-duration: 2s;
-    animation-fill-mode: backwards;
   }
 }
