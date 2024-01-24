@@ -1,9 +1,14 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="flex items-center justify-center min-h-screen">
-      <button className="bg-teal-700 text-black font-medium py-2 mx-4 rounded-md">
+      <Link
+        className="bg-teal-500 text-black font-medium py-2 px-4 rounded-md"
+        href="/dashboard"
+      >
         Go to dashboard
-      </button>
+      </Link>
     </main>
   );
 }
