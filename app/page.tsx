@@ -1,6 +1,9 @@
+import { fetchPosts } from "@/lib/action/prisma.action";
 import Link from "next/link";
 
 export default async function Home() {
+  const posts = await fetchPosts();
+  console.log(posts);
   return (
     <main className="flex items-center justify-center min-h-screen">
       <Link
@@ -9,6 +12,8 @@ export default async function Home() {
       >
         Go to dashboard
       </Link>
+
+      
     </main>
   );
 }
