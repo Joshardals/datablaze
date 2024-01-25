@@ -1,9 +1,10 @@
+import Form from "@/components/Form";
+import Title from "@/components/Title";
 import { fetchPosts } from "@/lib/action/prisma.action";
 import Link from "next/link";
 
 export default async function Home() {
   const posts = await fetchPosts();
-  console.log(posts);
   return (
     <main className="flex flex-col space-y-2 items-center justify-center min-h-screen">
       <Link
@@ -15,12 +16,10 @@ export default async function Home() {
 
       {posts?.map((post) => {
         const { id, title } = post;
-        return (
-          <p key={id} className=" text-gray-500">
-            {title}
-          </p>
-        );
+        return <Title key={id} id={id} title={title} />;
       })}
+
+      <Form />
     </main>
   );
 }

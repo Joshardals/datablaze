@@ -14,3 +14,27 @@ export async function fetchPosts() {
     console.log(`Error: ${error.message}`);
   }
 }
+
+export async function createPosts(title: string) {
+  try {
+    noStore();
+    await prisma.post.create({
+      data: {
+        title: title,
+      },
+    });
+  } catch (error: any) {
+    console.log(`Error creating Posts: ${error.message}`);
+  }
+}
+
+export async function deletePosts(id: number) {
+  try {
+    noStore();
+    const data = await prisma.post.delete({
+      where: {
+        id,
+      },
+    });
+  } catch (error: any) {}
+}
