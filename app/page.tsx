@@ -1,13 +1,14 @@
 import Form from "@/components/Form";
 import Title from "@/components/Title";
+import TryingGsap from "@/components/TryingGsap";
 import { fetchPosts } from "@/lib/action/prisma.action";
 import Link from "next/link";
 
 export default async function Home() {
   const posts = await fetchPosts();
   return (
-    <main className="flex flex-col space-y-2 items-center justify-center min-h-[200vh]">
-      <Link
+    <main className="min-h-[200vh]">
+      {/* <Link
         className=" bg-teal-500 text-black font-medium py-2 px-4 rounded-md"
         href="/dashboard"
       >
@@ -18,8 +19,9 @@ export default async function Home() {
         const { id, title } = post;
         return <Title key={id} id={id} title={title} />;
       })}
+      <Form /> */}
 
-      <Form />
+      <TryingGsap />
     </main>
   );
 }
