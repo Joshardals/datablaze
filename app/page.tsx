@@ -1,5 +1,5 @@
-import Form from "@/components/Form";
-import Title from "@/components/Title";
+// import Form from "@/components/Form";
+// import Title from "@/components/Title";
 import TryingGsap from "@/components/TryingGsap";
 // import { fetchPosts } from "@/lib/action/prisma.action";
 import Link from "next/link";
