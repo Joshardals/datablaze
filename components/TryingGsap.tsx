@@ -14,9 +14,9 @@ export default function TryingGsap() {
       gsap.to(".c", {
         scrollTrigger: {
           trigger: ".c",
-          start: "top center",
+
           markers: true,
-          toggleActions: "restart pause reverse pause",
+          scrub: true,
         },
         x: 400,
         rotate: 360,
