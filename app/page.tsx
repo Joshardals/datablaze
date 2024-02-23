@@ -1,11 +1,11 @@
 import Form from "@/components/Form";
 import Title from "@/components/Title";
 import TryingGsap from "@/components/TryingGsap";
-import { fetchPosts } from "@/lib/action/prisma.action";
+// import { fetchPosts } from "@/lib/action/prisma.action";
 import Link from "next/link";
 
 export default async function Home() {
-  const posts = await fetchPosts();
+  // const posts = await fetchPosts();
   return (
     <main className="min-h-[300vh]">
       {/* <Link
