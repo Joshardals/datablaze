@@ -4,6 +4,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import TransitionLink from "./TransitionLink";
 
 export default function Header() {
   const header = useRef<HTMLDivElement | null>(null);
@@ -36,9 +37,11 @@ export default function Header() {
           <ul className="flex items-center justify-center space-x-14">
             <li className="active">
               <Link href="/">Home</Link>
+              {/* <TransitionLink href="/" label="Home" /> */}
             </li>
             <li>
               <Link href="/about">About</Link>
+              {/* <TransitionLink href="/about" label="About" /> */}
             </li>
             <li>
               <Link href="contact.html">Contact</Link>

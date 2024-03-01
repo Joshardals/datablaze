@@ -9,12 +9,12 @@ import Link from "next/link";
 
 export default function Home() {
   // const posts = await fetchPosts();
-  useGSAP(() => {
-    const tl = gsap.timeline({});
-    tl.to(".red", { opacity: 100, display: "hidden" });
-    tl.to(".red", { background: "#FFF", duration: 1 });
-    tl.to(".red", { opacity: 0, duration: 1 });
-  });
+  // useGSAP(() => {
+  //   const tl = gsap.timeline({});
+  //   tl.to(".red", { opacity: 100, display: "hidden" });
+  //   tl.to(".red", { background: "#FFF", duration: 1 });
+  //   tl.to(".red", { opacity: 0, duration: 1 });
+  // });
   return (
     <main className="flex items-center justify-center min-h-screen">
       {/* <Link
