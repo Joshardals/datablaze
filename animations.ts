@@ -35,8 +35,8 @@ export const animatePageIn = () => {
       xPercent: 0,
     })
       .to(transitionElement2, {
-        yPercent: -100,
-        duration: 1.2,
+        xPercent: 100,
+        duration: 1,
       })
       .to(transitionElement2, {}, "<");
   }
