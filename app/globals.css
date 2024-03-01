@@ -51,7 +51,8 @@
   .fadeOut {
     animation: fadeOut;
     animation-timing-function: cubic-bezier(-0.9, -0.9, 0.1, 0.1);
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    animation-delay: 1s;
   }
 }

@@ -12,13 +12,14 @@ export default function Template({ children }: { children: React.ReactNode }) {
     // });
   }, [transition]);
   return (
-    <div className="pointer-events-none" ref={transition}>
+    <div>
       {/* <div
         id="transition-element"
         className="w-screen h-screen bg-black z-100 fixed top-0 left-0"
       ></div> */}
       <div
         id="transition-element2"
+        ref={transition}
         className="w-screen h-screen bg-white pointer-events-none z-100 fixed top-0 left-0"
       ></div>
 
