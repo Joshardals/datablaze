@@ -25,6 +25,21 @@ export const animatePageIn = () => {
         "<"
       );
   }
+
+  const transitionElement2 = document.getElementById("transition-element2");
+
+  if (transitionElement2) {
+    const tl = gsap.timeline();
+
+    tl.set(transitionElement2, {
+      xPercent: 0,
+    })
+      .to(transitionElement2, {
+        yPercent: -100,
+        duration: 1.2,
+      })
+      .to(transitionElement2, {}, "<");
+  }
 };
 
 export const animatePageOut = (href: string, router: AppRouterInstance) => {
